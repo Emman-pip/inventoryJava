@@ -15,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class LoginSignUpWindow extends Stage {
@@ -31,6 +32,9 @@ public class LoginSignUpWindow extends Stage {
 		grid.setVgap(10);
 		grid.setHgap(10);
 		grid.setAlignment(Pos.CENTER);
+
+		Text login_txt = new Text("Login");
+		login_txt.setId("login_txt");
 
 		Label username_lbl = new Label("Username ");
 		TextField username_field = new TextField();
@@ -65,6 +69,9 @@ public class LoginSignUpWindow extends Stage {
 		signup_btn.setCursor(Cursor.HAND);
 		login_btn.setCursor(Cursor.HAND);
 
+		login_txt.setCursor(Cursor.HAND);
+
+		grid.add(login_txt, 1, 0, 2, 1);
 		grid.add(username_lbl, 1, 1);
 		grid.add(username_field, 2, 1);
 		grid.add(password_lbl, 1, 2);
@@ -78,6 +85,7 @@ public class LoginSignUpWindow extends Stage {
 		GridPane grid = LoginForm();
 
 		Scene scene = new Scene(grid, 500, 500);
+		scene.getStylesheets().add(new ImageUtilities().filePath("/com/main/Login.css"));
 		return scene;
 	}
 }
