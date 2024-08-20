@@ -1,8 +1,10 @@
-package com.main;
+package com.main.utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+
+import com.main.App;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;

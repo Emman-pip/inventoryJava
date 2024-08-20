@@ -1,6 +1,6 @@
 package com.main;
 
-import java.io.FileNotFoundException;
+import com.main.utilities.ImageUtilities;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -14,7 +14,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
